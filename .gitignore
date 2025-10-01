@@ -1,0 +1,15 @@
+# Secrets and sensitive configuration
+secrets.env
+secrets.yaml
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+.env/
+
+# Generated assets
+outputs/
+
