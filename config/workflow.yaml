@@ -1,0 +1,34 @@
+# High-level configuration for the automated content creation workflow.
+
+project:
+  name: content-automation
+  content_pillars:
+    - Cosmic Myth Bites
+    - Poetic Pairings
+    - Garden & Moon
+
+storage:
+  inputs_dir: ./inputs
+  outputs_dir: ./outputs
+  scripts_dir: ./scripts
+
+services:
+  google_sheets:
+    sheet_id: YOUR_SHEET_ID
+    prompt_range: Prompts!A2:C100
+  caption_model:
+    provider: openai
+    model: gpt-4.1-mini
+  image_generator:
+    provider: nanobanana
+    style: cinematic
+
+publishing:
+  enabled: false
+  default_hashtags:
+    - "#ShortFormMagic"
+    - "#DailyInspiration"
+  future_tools:
+    - n8n
+    - blotato
+
